@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt="Logo"> </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li> <a href="about.html">ABOUT</a> </li>
+                    <li> <a href="course.html">COURSE</a> </li>
+                    <li> <a href="blog.html">BLOG</a> </li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Professional and Other Certifications</h1>
+    </section>
+
+    <!--------- Blog Page Content --------->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certifications.jpg" alt="Certification">
+                <h2>Our Professional and Other Certifications</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum iusto pariatur architecto nulla, libero, fuga aut veniam eligendi ratione amet necessitatibus at inventore cupiditate quae ducimus enim officia nesciunt.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, facilis illum. Praesentium veniam doloremque impedit maiores quas totam a obcaecati ab doloribus alias. Veniam, ab est dignissimos sint quidem reiciendis?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sunt velit, quia fugiat provident suscipit numquam excepturi a id. Et cumque eius exercitationem porro autem. Unde aspernatur laborum minima accusantium?</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore maiores enim odit provident minus eligendi voluptatum incidunt commodi voluptatem tenetur, in dolorum, mollitia vero magnam. Reprehenderit eius at nostrum praesentium.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Categories Available:</h3>
+                <div>
+                    <li>Bcom(CA)</li>
+                </div>
+                <div>
+                    <li>BBA(Aviation and International Toursim)</li>
+                    <li>BBA(Hotel and Hospitality)</li>
+                </div>
+                <div>
+                    <li>BCA</li>
+                </div>
+                <div>
+                    <li>Bsc(Criminology and forensic Science)</li>
+                    <li>Bsc(Psychology and Bio Chemistry)</li>
+                </div>
+                <div>
+                    <li>BA(Psychology)</li>
+                    <li>BA(Journalism,Mass Communication)</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!---------- Footer ----------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We Excel in providing top-notch education with supportive teachers, and also emphasizes sports and extracurricular activities like dance, drama, singing, NCC, NSS, and the Rotaract Club. We're committed to continuous improvement and aspire to reach even greater heights.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Students of MFGC</p>
+
+    </section>
+
+
+    <!----- JavaScript for toggle menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
